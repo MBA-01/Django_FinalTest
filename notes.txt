@@ -1,0 +1,40 @@
+create a new App inside the global folder.
+
+
+as chagpt explained, these apps are used for different purposes.
+
+as they are totally autonomous apps working for a certain purpose and have a goal to achieve 
+
+
+Models (Blueprints): Think of models as blueprints for the different parts of your castle. 
+For example, you might have blueprints for towers, walls, and rooms. 
+In Django, you create models to describe the different things you want in your web app, like users, posts, or comments.
+
+Views (Windows): Views are like windows in your castle. 
+They show people different parts of your castle when they look through them. 
+In Django, views are like the different pages or sections of your web app that people can see.
+
+Templates (Decorations): Templates are like decorations inside your castle. 
+They make things look nice and organized. 
+In Django, templates are used to make your web app pages look good by adding colors, images, and arranging things neatly.
+
+URLs (Signposts): Imagine you have signposts outside your castle that tell visitors where to go. 
+In Django, URLs are like signposts that help direct people to the right views (windows) in your web app.
+
+Forms (Magic Scrolls): Sometimes you want your visitors to leave a message or input some information. 
+Forms are like magic scrolls that help your visitors send messages to your castle. 
+In Django, forms help you collect and process information from users.
+
+Admin (Magic Wand): Django also gives you a magic wand called the admin panel. 
+With this, you can easily manage and organize everything in your castle without having to do a lot of coding.
+
+
+
+
+________________________________________________________________________________
+
+1. create an app (test1)
+2. add view to views (test1)
+3. add urls.py to (test1)
+4. 
+
