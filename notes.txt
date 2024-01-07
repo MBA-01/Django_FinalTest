@@ -36,5 +36,48 @@ ________________________________________________________________________________
 1. create an app (test1)
 2. add view to views (test1)
 3. add urls.py to (test1)
-4. 
+
+after seeing how we make urls to views. 
+
+we did execute "python manage.py migrate"
+
+and we started making models, Todolist and item models 
+(models are more like database for django)
+
+now we'll execute "python manage.py makemigrations main"
+
+everything worked well but we encountered a problem
+
+needed to fix a bug with "python manage.py migrate --run-syncdb" for the error of "django.db.utils.OperationalError: no such table: test1_todolist"
+
+now we have the models existing, we created an Todolist with the shell "python manage.py shell"
+
+then we executed 
+
+"""
+from test1.models import Item,ToDoList
+t = ToDoList(name="Mohamed\'s Todolist")
+t.save()
+"""
+
+
+this is how to create a new object.
+
+we can get all objects by : "ToDoList.objects.all()"
+
+we can get object by id : " ToDoList.objects.get(id=1)"
+
+we create an item differently than the ToDoList object : "t.Item_set.create(text="random text",complete=False)"
+
+
+now we'll display the ToDoList and Items.
+
+we managed to give an int as a request to the server 
+
+we went to urls and gave it "<int:id>" instead of " " 
+
+and added id as a parameter to index() and displayed it as :
+
+def index(response,id):
+    return HttpResponse("<h1>%s</h1>" % id)
 
